@@ -28,12 +28,12 @@ int main()
     printf("%d", matrix[0][0]);
 
 
-    int i, j;
-    for (i = 0; i < 2; i++)
+    int t , e;
+    for (t = 0; t < 2; t++)
     {
-        for (j = 0; j < 3; j++)
+        for (e = 0; e < 3; e++)
         {
-            printf("%d\n", matrix[i][j]);
+            printf("%d\n", matrix[t][e]);
         }
     }
   
@@ -43,16 +43,38 @@ int main()
     char greetings[] = "Hello World!";
     printf("%s", greetings);
 
-    
+
     printf("%c", greetings[0]);
 
     greetings[0] = 'J';
     printf("%s", greetings);
 
-
-    for (i = 0; i < 5; ++i)
+    int w;
+    for (w = 0; w < 5; ++w)
     {
-        printf("%c\n", greetings[i]);
+        printf("%c\n", greetings[w]);
     }
+
+
+
+
+    // inpput
+
+
+   
+        // Create a string
+        char fullName[30];
+
+        // Ask the user to input some text (full name)
+        printf("Type your full name and press enter: \n");
+
+        // Get the text
+        fgets(fullName, sizeof(fullName), stdin);
+
+        // Output the text
+        printf("Hello %s", fullName);
+
+        return 0;
+    
     return 0;
 }
